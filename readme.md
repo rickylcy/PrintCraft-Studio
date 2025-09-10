@@ -185,63 +185,8 @@ PRs welcome! Please read `CONTRIBUTING.md` and follow Conventional Commits.
 
 ## 📄 License
 
-MIT © You
+MIT © Ricky LAU
 
 ---
-
-## 📦 Release checklist
-
-- [ ] Update README screenshots
-- [ ] Bump version in root `package.json`
-- [ ] Tag `v0.1.0` and create a GitHub Release with notes
-- [ ] Attach example bytes or sample templates in `/examples`
-
----
-
-## 📁 Repository extras (recommended)
-
-Include these files to make the repo shine:
-
-```
-LICENSE (MIT)
-README.md
-.env.example
-.gitignore
-.gitattributes
-.editorconfig
-.github/
-  ├─ ISSUE_TEMPLATE/
-  │   ├─ bug_report.md
-  │   └─ feature_request.md
-  ├─ pull_request_template.md
-  └─ workflows/ci.yml
-CONTRIBUTING.md
-CODE_OF_CONDUCT.md
-SECURITY.md
-CHANGELOG.md
-docs/
-  ├─ screenshot-editor.png
-  └─ screenshot-print-preview.png
-```
-
-**.gitignore** should exclude: `node_modules/`, `.next/`, `*.log`, `.env`, `prisma/*.db`, `coverage/`, `apps/**/dist/`.
-
-**.github/workflows/ci.yml** (example):
-
-```yaml
-name: CI
-on: [push, pull_request]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-        with: { version: 9 }
-      - uses: actions/setup-node@v4
-        with: { node-version: 20, cache: "pnpm" }
-      - run: pnpm i --frozen-lockfile
-      - run: pnpm -F @printcraft/web build || echo "no build step yet"
-```
 
 Happy printing! 🖨️✨
