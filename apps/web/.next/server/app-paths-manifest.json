@@ -1,0 +1,6 @@
+{
+  "/templates/[id]/edit/page": "app/templates/[id]/edit/page.js",
+  "/api/print/route": "app/api/print/route.js",
+  "/api/profiles/route": "app/api/profiles/route.js",
+  "/api/printers/route": "app/api/printers/route.js"
+}

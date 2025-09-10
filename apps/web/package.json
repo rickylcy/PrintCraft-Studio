@@ -1,0 +1,26 @@
+{
+  "name": "@printcraft/web",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "prisma:gen": "prisma generate --schema ../../prisma/schema.prisma",
+    "prisma:migrate": "prisma migrate dev --schema ../../prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.79",
+    "@printcraft/encoders": "workspace:*",
+    "@prisma/client": "^6.15.0",
+    "autoprefixer": "^10.4.20",
+    "nanoid": "^5.1.5",
+    "next": "14.2.5",
+    "node-fetch": "^3.3.2",
+    "postcss": "^8.4.41",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "^3.4.10",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "prisma": "^6.15.0"
+  }
+}

@@ -1,0 +1,28 @@
+# Normalize line endings to LF in the repo (Git converts locally as needed)
+* text=auto eol=lf
+
+# Treat images/binaries as binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.ico  binary
+*.node binary
+
+# Mark build artifacts as generated (GitHub linguist/statistics)
+**/dist/**           linguist-generated
+**/.next/**          linguist-generated
+**/build/**          linguist-generated
+**/*.min.js          linguist-generated
+
+# Docs are documentation
+docs/**              linguist-documentation
+
+# Lockfiles & large diffs — keep default merge behavior; optionally:
+# pnpm-lock.yaml     -merge
+# yarn.lock          -merge
+
+# Keep CRLF for Windows-only scripts if you add any .bat later
+*.bat eol=crlf

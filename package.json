@@ -1,0 +1,19 @@
+{
+  "name": "printcraft",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @printcraft/web dev",
+    "dev:agent": "pnpm --filter @printcraft/agent dev"
+  },
+  "devDependencies": {
+    "prisma": "^6.15.0"
+  },
+  "dependencies": {
+    "@prisma/client": "6.15.0"
+  }
+}

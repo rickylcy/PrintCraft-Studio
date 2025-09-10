@@ -1,0 +1,8 @@
+{
+  "deal_no": 1234,
+  "sendtime": "2025-09-09T09:00:00+10:00",
+  "items": [
+    { "quantity": 1, "title": "Tuna Roll" },
+    { "quantity": 2, "title": "Miso Soup" }
+  ]
+}

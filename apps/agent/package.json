@@ -1,0 +1,11 @@
+{
+"name": "@printcraft/agent",
+"private": true,
+"scripts": {
+"dev": "node index.js"
+},
+"dependencies": {
+"express": "^4.19.2",
+"printer": "^0.4.0" 
+}
+}
